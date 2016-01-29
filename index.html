@@ -177,15 +177,106 @@
 
     
     
+
+    
       
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/01/29/利用gitpage和Hexo创建独立博客(二) /" itemprop="url">
+                  未命名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            發表於
+            <time itemprop="dateCreated" datetime="2016-01-29T14:27:46+08:00" content="2016-01-29">
+              2016-01-29
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
       
-        
-        
-        
       
 
       
-    
+        
+          <span itemprop="articleBody">
+            
+              <h1 id="利用gitpage和Hexo创建独立博客(二)">利用gitpage和Hexo创建独立博客(二) </h1><p>这是我的个人博客，欢迎大家常来围观。网址是：www.coderqi.com<br>上一篇讲述了如何搭建一个gitPage+Hexo的系统环境。现在来说一下如何使用这个环境。</p>
+<p>###gitPage设置<br>想要gitPage显示自己网页，需要登陆github，创建一个代码仓库，仓库的名字是，[github username].github.io<br>注意这里必须是上面的名字，然后只要在这里面上传一个index.html,我们就可以通过再浏览器里输入<a href="http://[github" target="_blank" rel="external">http://[github</a> username].github.io来访问index.html.<br>注意：这里仓库的根目录下必须要有一个index.html,否则访问会显示404.</p>
+<p>###初始化Hexo文件夹<br>有了存放并显示网页的地方，剩下的就是利用Hexo生成静态网页了。</p>
+<p>创建一个文件夹，然后对这个文件夹进行初始化，创建一些hexo的基本文件,从命令行里进入文件夹之后，执行下列指令</p>
+<p>hexo init</p>
+<p>执行完指令后，发现文件夹下面多了五个文件夹和几个文件。如下图：</p>
+<p>安装Hexo依赖包</p>
+<p>接下来，再安装hexo的一些依赖包，执行下面的代码,这里控制台也会提示我们要执行下面的代码.</p>
+<p>//这里的sudo是获取系统的权限,如果控制台提示已经是最高用户登录,不需要再获取权限了,那么就讲下面的sudo去掉就是了</p>
+<p>sudo npm install</p>
+<p>创建新的博客</p>
+<p>hexo可以通过指令新建一个模板博客，执行下列指令</p>
+<p>hexo new “新博客的标题”</p>
+<p>这样在source/_posts文件夹下面就会生成一个“新博客的标题.md”文件，这就是生成的静态网页文件，我们可以参照默认的那个hello world.md中得内容的格式编写我们的博客，一些语法都可以在hello world.md中找到。</p>
+<p>###编写软件<br>这里给大家推荐一个软件，这个软件叫Mou，也就是原先大名鼎鼎的markdown。他实现的是界面分为两部分，左半部分是代码，右半部分就是左边代码生成的网页效果，也就是说可以实时的查看我们所修改的静态网页的显示效果。这里是传送门，请各位自行百度然后下载。</p>
+<p>###生成静态网页<br>写完内容之后，我们就要利用hexo的主题样式模板生成静态网页了，执行下列指令。</p>
+<p>hexo g</p>
+<p>这时候，在hexo的根目录下的public文件夹下会新生成一个index.html和一些文件夹。</p>
+<p>###上传文件<br>然后我们通过命令行也好，通过客户端工具也罢，只要把public文件夹下面的所有文件上传的到之前建立好的那个github仓库里就可以了。</p>
+<p>###查看结果<br>上传完成，稍等片刻，通过<a href="http://[github" target="_blank" rel="external">http://[github</a> username].github.io即可访问到我们刚才生成的网页。<br>至于username，可以在github里面进行设置.</p>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
 
     
       
@@ -276,86 +367,6 @@
 <p>然后还需要一个设定，就是指定当前系统的默认版本是我们刚才安装的版本。</p>
 <p>nvm alias default v2.2.3</p>
 
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/01/29/Untitled/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            發表於
-            <time itemprop="dateCreated" datetime="2016-01-29T14:19:51+08:00" content="2016-01-29">
-              2016-01-29
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              
             
           </span>
         
